@@ -1,7 +1,6 @@
 const Header = () => {
 
     const headerStyle = {
-        backgroundColor: "black",
         color: "white",
         padding: "20px",
         textAlign: "center"

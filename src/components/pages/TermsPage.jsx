@@ -1,8 +1,10 @@
+import Terms from "../register/Terms.jsx";
+import "./TermsPage.css";
 const TermsPage = () => {
 
     return(
-        <div className="register-page">
-            약관동의페이지
+        <div className="terms-page">
+            <Terms />
         </div>
     );
 }
