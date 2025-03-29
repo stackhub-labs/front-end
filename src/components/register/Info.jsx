@@ -31,7 +31,7 @@ const Info = () => {
         console.log("가입 정보:", textItems);
     };
 
-    const handleAgreeTermsClick = () => {
+    const handleJoinClick = () => {
         if (textItems.email && textItems.password && textItems.name && textItems.nickName) {
             navigate("/terms");
         } else {
@@ -41,7 +41,7 @@ const Info = () => {
 
     const handleButtonClick = () => {
         handleSubmit();
-        handleAgreeTermsClick();
+        handleJoinClick();
     };
 
     return (
