@@ -27,16 +27,17 @@ const Info = () => {
         }));
     };
 
-    const handleSubmit = () => {
-        console.log("가입 정보:", textItems);
+    const handleJoinClick = () => {
+        if (!textItems.name || !textItems.email || !textItems.password || !textItems.nickName) {
+            alert("모든 정보를 입력해주세요!");
+            return;
+        }
+        localStorage.setItem("signupData", JSON.stringify(textItems));
+        navigate("/terms");
     };
 
-    const handleJoinClick = () => {
-        if (textItems.email && textItems.password && textItems.name && textItems.nickName) {
-            navigate("/terms");
-        } else {
-            alert("모든 정보를 입력해주세요!");
-        }
+    const handleSubmit = () => {
+        console.log("가입 정보:", textItems);
     };
 
     const handleButtonClick = () => {

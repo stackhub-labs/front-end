@@ -1,5 +1,5 @@
 import "./RegisterPage.css";
-import Header from "../register/Header.jsx";
+import Header from "../common/Header.jsx";
 import Info from "../register/Info.jsx";
 const RegisterPage = () => {
 
