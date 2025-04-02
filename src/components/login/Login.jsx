@@ -8,6 +8,9 @@ const Login = () => {
         password: "",
     });
 
+    const handleForgotPasswordClick = () => {
+        window.open("/forgot-password", "비밀번호 찾기",  "width=500,height=600");
+    }
     const handleChange = (e) => {
         const { name, value } = e.target;
         setTextItems((prevState) => ({
@@ -44,6 +47,8 @@ const Login = () => {
                 onChange={handleChange}
             />
             <Button text="로그인" onClick={handleButtonClick}/>
+
+            <p onClick={handleForgotPasswordClick} style={{color: "blue", cursor: "pointer"}}>비밀번호 찾기</p>
         </div>
     );
 };
